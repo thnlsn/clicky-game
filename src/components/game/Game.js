@@ -1,3 +1,5 @@
+// This component will set the grid and style for the game container and its tiles.
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
