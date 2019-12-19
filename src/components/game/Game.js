@@ -21,10 +21,11 @@ Game.propTypes = {
 
 const gridStyle = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr',
+  gridTemplateColumns: 'repeat(4, 1fr',
   gridGap: '1rem',
   justifyItems: 'center',
-  padding: '2rem'
+  padding: '2rem',
+
 };
 
 export default Game;

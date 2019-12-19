@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 const Footer = ({ icon, link, text }) => {
   return (
-    <nav className='navbar bg-navbar'>
-      <h1>
-        <a href={link}><i>{icon}</i>{text}</a>
-      </h1>
-    </nav>
+    <div className='bg-footer'>
+        <h5>
+            <a href={link}>
+                <i class={icon}> {text}</i>
+            </a>            
+        </h5>
+    </div>
   );
 };
 

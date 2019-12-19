@@ -1,5 +1,6 @@
 .App {
     background-color: #177dfd;
+    height: 100%;
 }
 
 .bg-navbar {
@@ -7,6 +8,18 @@
     background-color: #0c357c;
     border-bottom: 2rem solid #1267e5;
     font-family: 'Bowlby One SC', cursive;
+    margin-bottom: 0 !important;
+}
+
+.bg-footer {
+    color: #fbe030;
+    background-color: #0c357c;
+    border-top: 2rem solid #1267e5;
+    padding: .5rem 1rem .01rem 1rem;
+}
+
+.container {
+    height: 100vh;
 }
 
 
