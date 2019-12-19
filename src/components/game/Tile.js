@@ -3,14 +3,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Tile = ({ tile: { img } }) => {
+const Tile = ({ img }) => {
   return (
       <img
         src={img}
         alt=''
-/*         className='round-img' */
-        style={{ width: '60px', height: '60px' }}
-      />
+        style={{ width: '144px', height: '144px', border: '5px solid #fbe030'}}
+      />      
   );
 };
 

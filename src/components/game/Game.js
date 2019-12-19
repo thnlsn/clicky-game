@@ -6,22 +6,25 @@ import Tile from './Tile'
 
 const Game = ({ tiles }) => {
   console.log(tiles);
-  return(       
-    <div style={tileStyle}>
+  return (
+    <div style={gridStyle}>
       {tiles.map((tile, index) => (
         <Tile key={index} img={tile} />
       ))}
     </div>
-  )};
+  )
+};
 
 Game.propTypes = {
   tiles: PropTypes.array.isRequired,
 };
 
-const tileStyle = {
+const gridStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr',
-  gridGap: '1rem'
+  gridGap: '1rem',
+  justifyItems: 'center',
+  padding: '2rem'
 };
 
 export default Game;

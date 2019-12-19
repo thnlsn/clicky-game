@@ -1,28 +1,27 @@
-import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
+import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
 import Game from './components/game/Game'
+import './App.css';
 
 class App extends Component {
   state = {
-    tiles: ['https://picsum.photos/200', 'https://picsum.photos/200', 'https://picsum.photos/200', 'https://picsum.photos/200', 'https://picsum.photos/200']
+    tiles: ['https://picsum.photos/400', 'https://picsum.photos/123', 'https://picsum.photos/434', 'https://picsum.photos/252', 'https://picsum.photos/535', 'https://picsum.photos/213', 'https://picsum.photos/553', 'https://picsum.photos/646', 'https://picsum.photos/888']
   };
 
   render() {
     const { tiles } = this.state;
 
-    return <Router>
-            <div className='App'>
-              <Navbar>
-                <Game tiles={tiles} />
-              </Navbar>
-              <div className='container'>
+    console.log(tiles);
+    return (
+        <div className='App'>
+          <Navbar />
+          <div className='container'>
+            <Game tiles={tiles} />
+          </div>
+        </div>      
+    )
 
-              </div>
-            </div>
-          </Router>
-    }
+  }
 }
 
 export default App;

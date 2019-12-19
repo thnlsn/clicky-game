@@ -1,6 +1,12 @@
+.App {
+    background-color: #177dfd;
+}
+
 .bg-navbar {
     color: #fbe030;
     background-color: #0c357c;
+    border-bottom: 2rem solid #1267e5;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 
