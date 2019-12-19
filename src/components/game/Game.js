@@ -2,11 +2,26 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import Tile from './Tile'
 
-const Tiles = props => {
-  return <div></div>;
+const Game = ({ tiles }) => {
+  console.log(tiles);
+  return(       
+    <div style={tileStyle}>
+      {tiles.map((tile, index) => (
+        <Tile key={index} img={tile} />
+      ))}
+    </div>
+  )};
+
+Game.propTypes = {
+  tiles: PropTypes.array.isRequired,
 };
 
-Tiles.propTypes = {};
+const tileStyle = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr',
+  gridGap: '1rem'
+};
 
-export default Tiles;
+export default Game;

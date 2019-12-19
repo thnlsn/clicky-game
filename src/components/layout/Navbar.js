@@ -1,28 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'; // Links do not clear state, link a standard <a href='' /> would.
 
 const Navbar = ({ icon, title }) => {
   return (
-    <nav className='navbar bg-primary'>
+    <nav className='navbar bg-navbar'>
       <h1>
         <i className={icon} /> {title}
       </h1>
-      <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/about'>About</Link>
-        </li>
-      </ul>
     </nav>
   );
 };
 
 Navbar.defaultProps = {
-  title: 'GitHub Finder',
-  icon: 'fab fa-github'
+  title: 'Memory Game',
+  icon: 'fas fa-th'
 };
 
 Navbar.propTypes = {
