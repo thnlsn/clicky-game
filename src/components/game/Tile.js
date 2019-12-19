@@ -5,13 +5,15 @@ import PropTypes from 'prop-types';
 
 const Tile = ({ img }) => {
   return (
-    <div style={{ width: '100%', height: '100%', border: '5px solid #fbe030'}}>
-      <img
-        src={img}
-        alt=''
-      />        
+    <div
+      style={{
+        maxWidth: '200px',
+        maxHeight: '200px',
+        border: '5px solid #fbe030'
+      }}
+    >
+      <img style={{ objectFit: 'cover' }} src={img} alt='' />
     </div>
-    
   );
 };
 

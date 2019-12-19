@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Tile from './Tile'
+import Tile from './Tile';
 
 const Game = ({ tiles }) => {
   console.log(tiles);
@@ -12,11 +12,11 @@ const Game = ({ tiles }) => {
         <Tile key={index} img={tile} />
       ))}
     </div>
-  )
+  );
 };
 
 Game.propTypes = {
-  tiles: PropTypes.array.isRequired,
+  tiles: PropTypes.array.isRequired
 };
 
 const gridStyle = {
@@ -24,8 +24,7 @@ const gridStyle = {
   gridTemplateColumns: 'repeat(4, 1fr',
   gridGap: '1rem',
   justifyItems: 'center',
-  padding: '2rem',
-
+  padding: '2rem'
 };
 
 export default Game;

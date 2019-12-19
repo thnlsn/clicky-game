@@ -1,75 +1,63 @@
 .App {
-    background-color: #177dfd;
-    height: 100%;
+  background-color: #177dfd;
+  height: 100;
 }
 
 .bg-navbar {
-    color: #fbe030;
-    background-color: #0c357c;
-    border-bottom: 2rem solid #1267e5;
-    font-family: 'Bowlby One SC', cursive;
-    margin-bottom: 0 !important;
+  color: #fbe030;
+  background-color: #0c357c;
+  border-bottom: 2rem solid #1267e5;
+  font-family: 'Bowlby One SC', cursive;
+  margin-bottom: 0 !important;
 }
 
 .bg-footer {
-    color: #fbe030;
-    background-color: #0c357c;
-    border-top: 2rem solid #1267e5;
-    padding: .5rem 1rem .01rem 1rem;
+  color: #fbe030;
+  background-color: #0c357c;
+  border-top: 2rem solid #1267e5;
+  padding: 0.5rem 1rem 0.01rem 1rem;
 }
 
 .container {
-    height: 100vh;
+  height: 81vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .bg-batman {
-    background-color: #0c357c;
+  background-color: #0c357c;
 }
 
 .bg-ozymandias {
-    background-color: #fbe030;
+  background-color: #fbe030;
 }
 
 .bg-superman {
-    background-color: #1267e5;
+  background-color: #1267e5;
 }
 
 .bg-comedian {
-    background-color: #ee6630;
+  background-color: #ee6630;
 }
 
 .bg-manhattan {
-    background-color: #177dfd;
+  background-color: #177dfd;
 }
 
 .text-batman {
-    color: #0c357c;
+  color: #0c357c;
 }
 
 .text-ozymandias {
-    color: #fbe030;
+  color: #fbe030;
 }
 
 .text-superman {
-    color: #1267e5;
+  color: #1267e5;
 }
 
 .text-comedian {
-    color: #ee6630;
+  color: #ee6630;
 }
 
 .text-manhattan {
-    color: #177dfd;
+  color: #177dfd;
 }
