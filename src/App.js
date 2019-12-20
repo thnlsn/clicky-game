@@ -27,7 +27,10 @@ class App extends Component {
 
     console.log(tiles);
     return (
-      <div className='App'>
+      <div
+        className='App'
+        style={{ backgroundImage: "url('./The Bad News.png'" }}
+      >
         <Navbar />
         <div className='container'>
           <Game tiles={tiles} />
