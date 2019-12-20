@@ -5,16 +5,16 @@
 
 .bg-navbar {
   color: #fbe030;
-  background-color: #0c357c;
-  border-bottom: 2rem solid #1267e5;
+  background-color: black;
+  border-bottom: 2rem solid rgba(0, 0, 0, 0.815);
   font-family: 'Bowlby One SC', cursive;
   margin-bottom: 0 !important;
 }
 
 .bg-footer {
   color: #fbe030;
-  background-color: #0c357c;
-  border-top: 2rem solid #1267e5;
+  background-color: black;
+  border-top: 2rem solid rgba(0, 0, 0, 0.815);
   padding: 0.5rem 1rem 0.01rem 1rem;
 }
 
