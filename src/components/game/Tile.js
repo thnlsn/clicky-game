@@ -9,7 +9,8 @@ const Tile = ({ img }) => {
       style={{
         maxWidth: '200px',
         maxHeight: '200px',
-        border: '5px solid black'
+        border: '1px solid black',
+        boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.20)'
       }}
     >
       <img style={{ objectFit: 'cover' }} src={img} alt='' />

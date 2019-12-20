@@ -28,14 +28,18 @@ class App extends Component {
     console.log(tiles);
     return (
       <div
-        className='App'
+        className='App container-fluid'
         style={{
           backgroundImage: 'url(' + require('./assets/background.png') + ')'
         }}
       >
         <Navbar />
         <div className='container'>
-          <Game tiles={tiles} />
+          <div className='row'>
+            <div className='col-3 col-12-md'></div>
+
+            <Game tiles={tiles} />
+          </div>
         </div>
         <Footer />
       </div>
