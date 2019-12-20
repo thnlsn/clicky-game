@@ -29,7 +29,9 @@ class App extends Component {
     return (
       <div
         className='App'
-        style={{ backgroundImage: "url('./The Bad News.png'" }}
+        style={{
+          backgroundImage: 'url(' + require('./assets/background.png') + ')'
+        }}
       >
         <Navbar />
         <div className='container'>

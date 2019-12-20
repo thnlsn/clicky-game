@@ -9,7 +9,7 @@ const Tile = ({ img }) => {
       style={{
         maxWidth: '200px',
         maxHeight: '200px',
-        border: '5px solid #fbe030'
+        border: '5px solid black'
       }}
     >
       <img style={{ objectFit: 'cover' }} src={img} alt='' />
