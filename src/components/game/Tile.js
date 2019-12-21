@@ -15,7 +15,7 @@ const Tile = ({ img }) => {
     >
       <img
         style={{ objectFit: 'cover' }}
-        src={'../../assets/background.png'}
+        src={img}
         alt=''
       />
     </div>

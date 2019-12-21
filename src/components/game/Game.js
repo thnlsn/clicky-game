@@ -6,7 +6,7 @@ import Tile from './Tile';
 
 const Game = ({ tiles }) => {
   return (
-    <div className='col-9 col-12-md' style={gridStyle}>
+  <div className='col-9 col-12-md' style={gridStyle}>
       {tiles.map((tile, index) => (
         <Tile key={index} img={tile} />
       ))}
