@@ -13,7 +13,11 @@ const Tile = ({ img }) => {
         boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.20)'
       }}
     >
-      <img style={{ objectFit: 'cover' }} src={img} alt='' />
+      <img
+        style={{ objectFit: 'cover' }}
+        src={'../../assets/background.png'}
+        alt=''
+      />
     </div>
   );
 };

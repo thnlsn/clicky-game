@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import Tile from './Tile';
 
 const Game = ({ tiles }) => {
-  console.log(tiles);
   return (
     <div className='col-9 col-12-md' style={gridStyle}>
       {tiles.map((tile, index) => (
