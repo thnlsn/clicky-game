@@ -5,25 +5,31 @@ import PropTypes from 'prop-types';
 import Tile from './Tile';
 
 const Game = ({ tiles }) => {
-  return (
-  <div className='col-9 col-12-md' style={gridStyle}>
-      {tiles.map((tile, index) => (
-        <Tile key={index} img={tile} />
-      ))}
-    </div>
-  );
+    return (
+        <div className='col-9 col-12-md' style={gridStyle}>
+            {tiles.map((tile, index) => (
+                <Tile
+                    key={tile.id}
+                    name={tile.name}
+                    image={tile.image}
+                    clicked={tile.clicked}
+                    test={index}
+                />
+            ))}
+        </div>
+    );
 };
 
 Game.propTypes = {
-  tiles: PropTypes.array.isRequired
+    tiles: PropTypes.array.isRequired
 };
 
 const gridStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr',
-  gridGap: '1rem',
-  justifyItems: 'center',
-  padding: '2rem'
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr',
+    gridGap: '1rem',
+    justifyItems: 'center',
+    padding: '2rem'
 };
 
 export default Game;

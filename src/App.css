@@ -1,4 +1,9 @@
-html, 
+html,
 body {
     height: 100%;
+}
+
+.sepia {
+    -webkit-filter: sepia(20%);
+    filter: sepia(20%);
 }

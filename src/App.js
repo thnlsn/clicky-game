@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
 import Game from './components/game/Game';
 import Footer from './components/layout/Footer';
+import tiles from './tiles/tiles';
 import './App.css';
 
 class App extends Component {
     state = {
-        tiles: [
-            require('../public/images/'),
-            require('./assets/rorshach.png'),
-            require('./assets/comedian.png')
-        ],
+        tiles: tiles,
         guesses: []
     };
 
@@ -23,14 +20,15 @@ class App extends Component {
                 className='App container-fluid'
                 style={{
                     backgroundImage:
-                        'url(' + require('./assets/background.png') + ')'
+                        'url(' +
+                        require('./tiles/otherImages/background.png') +
+                        ')'
                 }}
             >
                 <Navbar />
                 <div className='container'>
                     <div className='row'>
                         <div className='col-3 col-12-md'></div>
-
                         <Game tiles={tiles} />
                     </div>
                 </div>

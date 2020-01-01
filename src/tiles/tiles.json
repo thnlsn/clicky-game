@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Arya",
+        "image": "arya.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Circe",
+        "image": "circe.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Daenarys",
+        "image": "daenerys.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Davos",
+        "image": "davos.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Jaime",
+        "image": "jaime.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Jon",
+        "image": "jon.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Ned",
+        "image": "ned.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Petyr",
+        "image": "petyr.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Ramsey",
+        "image": "ramsey.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "Sansa",
+        "image": "sansa.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Tormund",
+        "image": "tormund.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Tyrion",
+        "image": "tyrion.jpg",
+        "clicked": false
+    }
+]
