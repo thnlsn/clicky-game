@@ -17,6 +17,7 @@ class App extends Component {
 
     componentDidMount() {
         this.randomizeTiles(tiles);
+        console.log(this.state);
     }
 
     handleClick = (char, index) => {
