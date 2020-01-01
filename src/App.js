@@ -32,13 +32,13 @@ class App extends Component {
         }
         console.log(this.state.tiles[chosen]);
         this.randomizeTiles(tiles);
-        console.log(this.state.tiles[chosen]);
     };
 
-    handleCorrectClick = (index, num) => {
-        console.log(num);
+    handleCorrectClick = (index, id) => {
+        console.log(id);
+        console.log(index);
         this.setState({ isGuessCorrect: true });
-        let id = { ...this.state.tiles[index] };
+        let obj = { ...this.state.tiles[index] };
         this.setState();
 
         console.log('correct');
