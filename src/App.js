@@ -20,26 +20,27 @@ class App extends Component {
         console.log(this.state);
     }
 
-    handleClick = (char, index) => {
-        let choices = tiles;
+    handleClick = (char, id) => {
+        let choices = this.state.tiles;
         console.log(char);
-        index = choices.findIndex(index => index.name === char);
-        if (!choices[index].clicked) {
-            this.setState();
-            this.handleCorrectClick(char, index);
+        let chosen = choices.findIndex(chosen => chosen.name === char);
+        if (!choices[chosen].clicked) {
+            let id = choices[chosen].id;
+            this.handleCorrectClick(chosen, id);
         } else {
-            this.handleIncorrectClick(char, index);
+            this.handleIncorrectClick(chosen, id);
         }
+        console.log(this.state.tiles[chosen]);
         this.randomizeTiles(tiles);
+        console.log(this.state.tiles[chosen]);
     };
 
-    handleCorrectClick = (name, index) => {
+    handleCorrectClick = (index, num) => {
+        console.log(num);
         this.setState({ isGuessCorrect: true });
-        this.setState(prevState => ({
-            tiles: prevState.tiles.map(tile =>
-                tile.index === index ? { ...tile, clicked: true } : tile
-            )
-        }));
+        let id = { ...this.state.tiles[index] };
+        this.setState();
+
         console.log('correct');
     };
 
