@@ -4,16 +4,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Tile from './Tile';
 
-const Game = ({ tiles }) => {
+const Game = ({ tiles, handleClick }) => {
     return (
-        <div className='col-9 col-12-md' style={gridStyle}>
-            {tiles.map((tile, index) => (
+        <div className='container' style={gridStyle}>
+            {tiles.map(tile => (
                 <Tile
                     key={tile.id}
                     name={tile.name}
                     image={tile.image}
                     clicked={tile.clicked}
-                    test={index}
+                    handleClick={handleClick}
                 />
             ))}
         </div>

@@ -2,73 +2,73 @@
     {
         "id": 1,
         "name": "Arya",
-        "image": "arya.jpg",
+        "image": "tiles/tileImages/arya.jpg",
         "clicked": false
     },
     {
         "id": 2,
         "name": "Circe",
-        "image": "circe.jpg",
+        "image": "tiles/tileImages/circe.jpg",
         "clicked": false
     },
     {
         "id": 3,
         "name": "Daenarys",
-        "image": "daenerys.jpg",
+        "image": "tiles/tileImages/daenerys.jpg",
         "clicked": false
     },
     {
         "id": 4,
         "name": "Davos",
-        "image": "davos.jpg",
+        "image": "tiles/tileImages/davos.jpg",
         "clicked": false
     },
     {
         "id": 5,
         "name": "Jaime",
-        "image": "jaime.jpg",
+        "image": "tiles/tileImages/jaime.jpg",
         "clicked": false
     },
     {
         "id": 6,
         "name": "Jon",
-        "image": "jon.jpg",
+        "image": "tiles/tileImages/jon.jpg",
         "clicked": false
     },
     {
         "id": 7,
         "name": "Ned",
-        "image": "ned.jpg",
+        "image": "tiles/tileImages/ned.jpg",
         "clicked": false
     },
     {
         "id": 8,
         "name": "Petyr",
-        "image": "petyr.jpg",
+        "image": "tiles/tileImages/petyr.jpg",
         "clicked": false
     },
     {
         "id": 9,
         "name": "Ramsey",
-        "image": "ramsey.jpg",
+        "image": "tiles/tileImages/ramsey.jpg",
         "clicked": false
     },
     {
         "id": 10,
         "name": "Sansa",
-        "image": "sansa.jpg",
+        "image": "tiles/tileImages/sansa.jpg",
         "clicked": false
     },
     {
         "id": 11,
         "name": "Tormund",
-        "image": "tormund.jpg",
+        "image": "tiles/tileImages/tormund.jpg",
         "clicked": false
     },
     {
         "id": 12,
         "name": "Tyrion",
-        "image": "tyrion.jpg",
+        "image": "tiles/tileImages/tyrion.jpg",
         "clicked": false
     }
 ]

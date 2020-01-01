@@ -1,71 +1,89 @@
-html, 
-body,
 .App {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
-.App {
-  padding: 0 !important;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.815);
-  object-fit: cover;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+    color: var(--light-color);
+}
+
+.navbar .welcome span {
+    margin-right: 0.6rem;
 }
 
 .bg-navbar {
-  color: #fbe030da;
-  background-color: black;
-  font-family: 'Bowlby One SC', cursive;
-  margin-bottom: 0 !important;
+    color: #fbe030da;
+    background-color: rgb(15, 15, 15);
+    width: 100%;
 }
 
 .bg-footer {
-  color: #fbe030;
-  background-color: black;
-  padding: 0.5rem 1rem 0.01rem 1rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
+    color: #fbe030;
+    background-color: rgb(15, 15, 15);
+    padding: 0.5rem 1rem 0.01rem 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
-
-
 .bg-batman {
-  background-color: #0c357c;
+    background-color: #0c357c;
 }
 
 .bg-ozymandias {
-  background-color: #fbe030;
+    background-color: #fbe030;
 }
 
 .bg-superman {
-  background-color: #1267e5;
+    background-color: #1267e5;
 }
 
 .bg-comedian {
-  background-color: #ee6630;
+    background-color: #ee6630;
 }
 
 .bg-manhattan {
-  background-color: #177dfd;
+    background-color: #177dfd;
 }
 
 .text-batman {
-  color: #0c357c;
+    color: #0c357c;
 }
 
 .text-ozymandias {
-  color: #fbe030;
+    color: #fbe030;
 }
 
 .text-superman {
-  color: #1267e5;
+    color: #1267e5;
 }
 
 .text-comedian {
-  color: #ee6630;
+    color: #ee6630;
 }
 
 .text-manhattan {
-  color: #177dfd;
+    color: #177dfd;
 }
