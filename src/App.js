@@ -34,6 +34,7 @@ class App extends Component {
         this.randomizeTiles(tiles);
     };
 
+    // https://stackoverflow.com/questions/41949387/how-to-use-immutability-helper-to-update-a-nested-object-within-an-array/41949486#41949486
     handleCorrectClick = (index, id) => {
         console.log(id);
         console.log(index);
