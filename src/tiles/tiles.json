@@ -7,8 +7,8 @@
     },
     {
         "id": 2,
-        "name": "Circe",
-        "image": "tiles/tileImages/circe.jpg",
+        "name": "Cersei",
+        "image": "tiles/tileImages/cersei.jpg",
         "clicked": false
     },
     {
