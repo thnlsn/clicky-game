@@ -2,22 +2,20 @@ import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
 import Game from './components/game/Game';
 /* import Footer from './components/layout/Footer'; */
-import tiles from './tiles/tiles';
+import defaultTiles from './tiles/tiles';
 import './App.css';
 
 class App extends Component {
     state = {
-        isGuessCorrect: true,
-        tiles: tiles,
+        tiles: defaultTiles,
         score: 0,
-        maxScore: 12,
+        maxScore: defaultTiles.length,
         topScore: 0,
         message: 'Click an image to start your adventure!'
     };
 
     componentDidMount() {
-        this.randomizeTiles(tiles);
-        console.log(this.state);
+        this.randomizeTiles(this.state.tiles);
     }
 
     handleClick = (char, id) => {
@@ -30,24 +28,26 @@ class App extends Component {
         } else {
             this.handleIncorrectClick(chosen, id);
         }
-        console.log(this.state.tiles[chosen]);
-        this.randomizeTiles(tiles);
+        /* console.log(this.state.tiles[chosen]); */
+        this.randomizeTiles(this.state.tiles);
     };
 
     // https://stackoverflow.com/questions/41949387/how-to-use-immutability-helper-to-update-a-nested-object-within-an-array/41949486#41949486
     handleCorrectClick = (index, id) => {
+        let newScore = this.state.score + 1;
+        this.setState({ score: newScore });
         console.log(id);
         console.log(index);
-        this.setState({ isGuessCorrect: true });
-        let obj = { ...this.state.tiles[index] };
-        this.setState();
-
-        console.log('correct');
+        let updatedTiles = this.state.tiles;
+        updatedTiles[index].clicked = true;
+        console.log(updatedTiles);
+        this.setState({ tiles: updatedTiles });
+        console.log('Correct');
     };
 
-    handleIncorrectClick = char => {
-        this.setState({ isGuessCorrect: false });
-        console.log('incorrect');
+    handleIncorrectClick = () => {
+        this.setState({});
+        console.log('Incorrect');
     };
 
     randomizeTiles = arr => {
@@ -63,6 +63,12 @@ class App extends Component {
         }
         let newTiles = arr;
         this.setState({ tiles: newTiles });
+    };
+
+    reset = () => {
+        this.setState({ tiles: defaultTiles });
+        this.setState({ score: 0 });
+        this.randomizeTiles(this.state.tiles);
     };
 
     render() {
