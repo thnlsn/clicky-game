@@ -5,15 +5,12 @@ import Footer from './components/layout/Footer';
 import tiles from './tiles/tiles';
 import './App.css';
 
-const defaultTiles = tiles;
-
 class App extends Component {
     state = {
         tiles: tiles,
         score: 0,
-        maxScore: tiles.length,
         topScore: 0,
-        message: 'Click your way to the throne!'
+        message: 'Click on an image below to begin your journey to the throne!'
     };
 
     componentDidMount() {
@@ -22,7 +19,6 @@ class App extends Component {
 
     handleClick = char => {
         let choices = this.state.tiles;
-        console.log(char);
         let chosen = choices.findIndex(chosen => chosen.name === char);
         if (!choices[chosen].clicked) {
             let id = choices[chosen].id;
@@ -32,21 +28,33 @@ class App extends Component {
         }
         /* console.log(this.state.tiles[chosen]); */
         this.randomizeTiles(this.state.tiles);
+        console.log(this.state.score);
     };
 
     // https://stackoverflow.com/questions/41949387/how-to-use-immutability-helper-to-update-a-nested-object-within-an-array/41949486#41949486
-    handleCorrectClick = (index, id) => {
+    handleCorrectClick = index => {
+        this.setState({
+            message: `You've outsmarted ${this.state.tiles[index].name}. Good job!`
+        });
+        console.log(this.state.score);
         this.setState({ score: this.state.score + 1 });
+        console.log(this.state.score);
+        console.log(tiles.length);
+        console.log(this.state.score >= tiles.length);
+        if (this.state.score + 1 >= tiles.length) {
+            this.setState({
+                message: `Congratulations! You are the ruler of the Seven Kingdoms! Play again?`
+            });
+            this.reset();
+        }
         if (this.state.score >= this.state.topScore) {
             this.setState({ topScore: this.state.score + 1 });
         }
-        console.log(id);
-        console.log(index);
         let updatedTiles = this.state.tiles;
         updatedTiles[index].clicked = true;
-        console.log(updatedTiles);
         this.setState({ tiles: updatedTiles });
-        console.log('Correct');
+        console.log(this.state.score);
+        console.log(tiles);
     };
 
     handleIncorrectClick = char => {
@@ -54,8 +62,6 @@ class App extends Component {
             message: `Defeated by the hands of ${char}. Try again?`
         });
         this.reset();
-        console.log('Incorrect');
-        console.log(tiles);
     };
 
     randomizeTiles = arr => {
@@ -74,7 +80,9 @@ class App extends Component {
     };
 
     reset = () => {
-        console.log(defaultTiles);
+        let newTiles = this.state.tiles;
+        newTiles.map(tile => (tile.clicked = false));
+        this.setState({ tiles: newTiles });
         this.setState({ score: 0 });
         this.randomizeTiles(this.state.tiles);
     };
