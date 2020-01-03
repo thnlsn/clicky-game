@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Footer = ({ icon, link, text }) => {
     return (
-        <div className='bg-footer'>
+        <div className='footer'>
             <h5>
                 <a href={link}>
                     <i className={icon}> {text}</i>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
 import Game from './components/game/Game';
-/* import Footer from './components/layout/Footer'; */
+import Footer from './components/layout/Footer';
 import defaultTiles from './tiles/tiles';
 import './App.css';
 
@@ -77,7 +77,7 @@ class App extends Component {
             <div className='App container-fluid'>
                 <Navbar message={message} score={score} topScore={topScore} />
                 <Game tiles={tiles} handleClick={this.handleClick} />
-                {/*                 <Footer /> */}
+                <Footer />
             </div>
         );
     }

@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Navbar = ({ icon, title, message, score, topScore }) => {
+const Navbar = ({ title, message, score, topScore }) => {
     return (
         <nav className='navbar bg-navbar'>
-            <h1>
-                <i className={icon} /> {title}
-            </h1>
+            <img src={title} alt='' />
             <ul>
                 <li>
                     <h3>{message}</h3>
@@ -19,7 +17,7 @@ const Navbar = ({ icon, title, message, score, topScore }) => {
 };
 
 Navbar.defaultProps = {
-    title: 'MEMORY GAME',
+    title: require('../../tiles/otherImages/title.png'),
     icon: 'fas fa-th'
 };
 

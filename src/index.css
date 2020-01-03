@@ -1,6 +1,13 @@
+.container-fluid {
+    padding: 0 !important;
+}
+
 .App {
     height: 100%;
     width: 100%;
+    background-image: url('./tiles/otherImages/map.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
 .navbar {
@@ -10,21 +17,7 @@
     padding: 0.7rem 2rem;
     z-index: 1;
     width: 100%;
-    opacity: 0.9;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 0.45rem;
-    margin: 0 0.25rem;
-}
-
-.navbar a:hover {
-    color: var(--light-color);
+    opacity: 0.95;
 }
 
 .navbar .welcome span {
@@ -32,58 +25,24 @@
 }
 
 .bg-navbar {
-    color: #fbe030da;
+    color: white;
     background-color: rgb(15, 15, 15);
     width: 100%;
 }
 
-.bg-footer {
+.footer {
     color: #fbe030;
     background-color: rgb(15, 15, 15);
     padding: 0.5rem 1rem 0.01rem 1rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    z-index: 1;
     width: 100%;
-    overflow: hidden;
+    opacity: 0.95;
 }
 
-.bg-batman {
-    background-color: #0c357c;
+.footer a:hover {
+    color: white;
 }
 
-.bg-ozymandias {
-    background-color: #fbe030;
-}
-
-.bg-superman {
-    background-color: #1267e5;
-}
-
-.bg-comedian {
-    background-color: #ee6630;
-}
-
-.bg-manhattan {
-    background-color: #177dfd;
-}
-
-.text-batman {
-    color: #0c357c;
-}
-
-.text-ozymandias {
-    color: #fbe030;
-}
-
-.text-superman {
-    color: #1267e5;
-}
-
-.text-comedian {
-    color: #ee6630;
-}
-
-.text-manhattan {
-    color: #177dfd;
+.footer a {
+    color: rgb(221, 221, 221);
 }
