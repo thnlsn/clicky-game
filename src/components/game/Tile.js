@@ -7,7 +7,7 @@ const Tile = ({ name, image, handleClick }) => {
     return (
         <div
             style={{
-                border: '1px solid black',
+                border: '2px solid white',
                 boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.20)'
             }}
             onClick={() => handleClick(name)}

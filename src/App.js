@@ -53,7 +53,6 @@ class App extends Component {
         let updatedTiles = this.state.tiles;
         updatedTiles[index].clicked = true;
         this.setState({ tiles: updatedTiles });
-        console.log(this.state.score);
         console.log(tiles);
     };
 
