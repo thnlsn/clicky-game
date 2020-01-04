@@ -33,6 +33,7 @@
     padding-top: 0.5rem !important;
     text-align: center;
     color: white;
+    font-size: 10vw;
 }
 
 .footer {
@@ -72,4 +73,9 @@
 .score {
     padding-top: 0rem;
     font-size: x-large;
+}
+
+.sepia {
+    -webkit-filter: sepia(20%);
+    filter: sepia(20%);
 }

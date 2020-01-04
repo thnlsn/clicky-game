@@ -26,7 +26,7 @@ Game.propTypes = {
 
 const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr)',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr)',
     gridGap: '2rem',
     justifyItems: 'center',
     padding: '2rem'
