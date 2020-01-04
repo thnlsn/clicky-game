@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 const Tile = ({ name, image, handleClick }) => {
     return (
         <div
+            className='hvr-grow'
             style={{
                 border: '2px solid white',
                 boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.20)'

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './components/layout/Navbar';
+import Title from './components/layout/Title';
 import Game from './components/game/Game';
 import Footer from './components/layout/Footer';
 import tiles from './tiles/tiles';
@@ -10,7 +10,7 @@ class App extends Component {
         tiles: tiles,
         score: 0,
         topScore: 0,
-        message: 'Click on an image below to begin your journey to the throne!'
+        message: 'Click an image to begin your quest for the throne!'
     };
 
     componentDidMount() {
@@ -90,7 +90,7 @@ class App extends Component {
         const { message, score, topScore, tiles } = this.state;
         return (
             <div className='App container-fluid'>
-                <Navbar message={message} score={score} topScore={topScore} />
+                <Title message={message} score={score} topScore={topScore} />
                 <Game tiles={tiles} handleClick={this.handleClick} />
                 <Footer />
             </div>
