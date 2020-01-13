@@ -27,6 +27,6 @@ The objective of the game is to click an every character, but only once each. If
 -   React
 -   Javascript
 -   HTML5
--   CSS3
+-   CSS3 (w/ Grid)
 
 # This project is contributed to and maintained by Thomas Nelson
